@@ -8,4 +8,4 @@ layout: home
 
 In the meantime, enjoy this picture instead:
 
-![IT ME in poor quality](/assets/low_quality_self_portrait_image.jpg){:width="200px"}
+![IT ME in poor quality](/assets/low_quality_self_portrait_image.jpg){:style="display: block; margin: auto; width: 33%;"}

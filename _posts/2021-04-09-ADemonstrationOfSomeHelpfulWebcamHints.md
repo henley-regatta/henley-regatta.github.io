@@ -24,31 +24,35 @@ In common with _lots_ of people recently I've been using a WebCam I got for
  Camera app for this.
 
  Here's what it looks like when launching the webcam for the 2nd or later time:
+
  ![blurredimage]
 
  In Window's Camera app, you can manually focus but you need advanced settings
  enabled. Go to the gear icon top-left and select "Pro mode" to show the advanced
  settings:
+
  ![settingsdlg]
 
  Then, on the left hand side of the image use the middle widget (square in a circle)
  to slide the focus bar up and down until you're back in focus:
+
  ![focusslider]
 
  Voila! A perfectly focussed image is available:
+
  ![focussedimage]
 
 At this point you can quit the Camera app and relaunch or restart whatever
 application you were using...
 
 [blurredimage]: /assets/webcam-camera-blurredpic.png
-{:align="center" width="150px"}
+{:style="display: block; margin: auto; width: 50%;"}
 
 [settingsdlg]: /assets/webcam-camera-settings-dialog.png
-{:align="center"}
+{:style="display: block; margin: auto; width: 50%;"}
 
 [focusslider]: /assets/webcam-camera-focusslider.png
-{:align="center"}
+{:style="display: block; margin: auto; width: 50%;"}
 
 [focussedimage]: /assets/webcam-camera-focussedpic.png
-{align="center" width="150px"}
+{:style="display: block; margin: auto; width: 50%;"}
