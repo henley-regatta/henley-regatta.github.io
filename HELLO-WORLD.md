@@ -1,6 +1,8 @@
+---
 layout: page
 title: "Hello, World"
 permalink: /hello-world/
+---
 # Hello, World!
 
 If you're reading this, then I have successfully created and published a 
