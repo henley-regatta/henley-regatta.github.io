@@ -1,7 +1,7 @@
 layout: page
 title: "Hello, World"
 permalink: /hello-world/
-# hello-world
+# Hello, World!
 
 If you're reading this, then I have successfully created and published a 
 simple test-page for the root of my github pages blog using Jekyll.
