@@ -31,8 +31,8 @@ twitter_username: henley_regatta
 github_username:  henley-regatta
 
 # Build settings
-#theme: minima
-theme: jekyll-theme-minimal
+theme: minima
+#theme: jekyll-theme-minimal
 
 plugins:
   - jekyll-feed

@@ -4,6 +4,4 @@
 
 layout: home
 ---
-# Index
-
 Test page: [Hello World](/hello-world/)
