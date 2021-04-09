@@ -4,4 +4,8 @@
 
 layout: home
 ---
-Test page: [Hello World](/hello-world/)
+...I'm still not quite sure what I'm supposed to be adding here, but I'm sure as I get more comfortable with Jekyll and Templates I'll work it out...
+
+In the meantime, enjoy this picture instead:
+
+![IT ME in poor quality](/assets/low_quality_self_portrait_image.jpg){:width="200px"}
