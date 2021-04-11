@@ -24,3 +24,14 @@ except PublishError:
 print("Publishing complete")
 exit(0)
 {% endhighlight %}
+
+This, apparently, should render as a table:
+
+|Date|Location|Result|
+|:-:|:--|--:|
+|2021-04-25|Birmingham|Ugly|
+|2021-03-13|Bristol|Beautiful|
+|2021-02-14|London|Bad|
+|2020-12-09|Pill,<br> Pill|We Love Thee<br> Still|
+|====|
+|Christmas|North Pole|Ho Ho Ho!|
