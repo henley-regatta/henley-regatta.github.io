@@ -35,3 +35,7 @@ This, apparently, should render as a table:
 |2020-12-09|Pill,<br> Pill|We Love Thee<br> Still|
 |====|
 |Christmas|North Pole|Ho Ho Ho!|
+
+[See Also This Link]({% post_url 2021-04-09-MyPostingProcess %})
+
+(dude... this is _fun_ but it's *not* simpler than just editing some HTML....)
