@@ -2,7 +2,7 @@
 layout: post
 title:  "Grafana - Some Incomplete/In Progress Thoughts"
 date:   2021-04-09 17:30 +0100
-categories: incomplete
+categories: grafana
 tags: incomplete grafana experiences
 ---
 I have an actual business need to fully get to grips with
@@ -14,7 +14,7 @@ use it. Here are some thoughts that no doubt in time I'll come to disown.
 ## Caveat Lector
 For context: I've been building dashboards or other reporting tools for the
 interpretation of metric data for most of my career, across a range of tools,
-technologies and platforms too numerous to mention. I say this not to claim I'm 
+technologies and platforms too numerous to mention. I say this not to claim I'm
 some sort of  _expert_ at this, but to warn that this experience will affect my
 judgement and impartiality - I'm bound to have some _we've never done
 it like **this** before_ attitudes affecting how I see this..
@@ -100,7 +100,7 @@ wall.
 
 2. Very large numbers of "eyeballs" tracking one or two critical metrics. This
 is the "Need to know how many calls are in the call centre queue" or "What's
-the company stock price" use-case. 
+the company stock price" use-case.
     * If this isn't being met by a projected large-screen display (reducing this to a special case of the first scenario), it's normally met by directly embedding the one or two critical metrics directly into whatever primary interface is being used; interpretation/visualisation of these metrics is so basic a Dashboarding system of _any_ kind would be massive overkill
 
 3. Relatively small numbers of "eyeballs" (normally in the ~10 at a time range,
@@ -113,7 +113,7 @@ None of these use-cases gains much from having a Dashboarding/Reporting
 infrastructure in place that's able to cache or proxy actual data queries. This
 would only be an appropriate optimisation if the system was required to
 continually generate and present identical data and dashboards to a number of
-different clients[^1]. 
+different clients[^1].
 
 If you find yourself in that situation, you'll want to take into consideration
 the fact that Grafana's default _modus operandi_ might not scale to your needs
@@ -124,7 +124,7 @@ themselves in that situation, though.
 
 Just for clarity: The strengths of Grafana - lightweight therefore fast, and
 easy to use to generate graphic visualisations - are also at the root of it's
-core limitations. 
+core limitations.
 
 Grafana can only present the data it can retrieve. It cannot _process_ that
 data. If your datasource doesn't provide the number to Grafana (and _as a
@@ -135,7 +135,7 @@ on synthesising new values.
 
 The practical (infrastructure; who cares about the client anyway?) effect of
 this is that more load is placed on the datasource than on the Grafana server
-itself. 
+itself.
 
 An example: I have time-series data covering my energy consumption at various
 granularity levels. I also know what my current and historical billing rates
@@ -143,7 +143,7 @@ are. But it doesn't make sense to store my consumption (kWh of electricity) as
 a financial cost (what if the rate changed mid-period? I might only find out
 weeks later when my next bill comes in...) . It _does_ make sense to visualise
 the data as "financial" though, because that's the number that I'm most
-interested in understanding. 
+interested in understanding.
 
 In order to do so with an Influx back end (..and one old enough to require
 `InfluxQL` rather than `Flux` so I can't do table joins), I need a way of
@@ -158,11 +158,11 @@ that's sent to the Influx data-source so that _it_ can do the processing on
 every value before it's sent to the client (browser).
 
 Is this bad? Not necessarily but it's a performance factor you'd better allow
-for: 
-* Does your data source back-end have sufficient performance to be performing display calculations for you as well as processing normal back-end storage, filtering, aggregation etc operations? 
+for:
+* Does your data source back-end have sufficient performance to be performing display calculations for you as well as processing normal back-end storage, filtering, aggregation etc operations?
 * How well does this scale to very large data sources? In part this'll be driven by:
 * Can you write your queries to perform those calculations in an outer loop (as you'd like) or does the query language constrain you to transforming source data before filtering (expensive).
-    * In my example, it's the difference between transforming _every_ kWh data-point into cost _before_ aggregation/filtering/reduction (at **O(n)** performance) vs doing all that processing and _then_ converting the (singular) result to cost (at **O(1)** performance). Because Grafana can't do the post-query processing to do this efficiently, and because of InfluxQL design limitations, I'm often forced to do the former. 
+    * In my example, it's the difference between transforming _every_ kWh data-point into cost _before_ aggregation/filtering/reduction (at **O(n)** performance) vs doing all that processing and _then_ converting the (singular) result to cost (at **O(1)** performance). Because Grafana can't do the post-query processing to do this efficiently, and because of InfluxQL design limitations, I'm often forced to do the former.
 
 ## Experential Glitches
 I'm going to document here things I've observed that I think I shouldn't have
@@ -192,7 +192,7 @@ across the graph? Nope.
 workflow for building a panel builds queries that retrieve _all_ the data for a
 given configured time window (possibly years!), probably aggregates it into
 `$__interval` chunks and then throws out all but the last value to plot on a
-gauge. 
+gauge.
     * It's up to you, the dashboard designer, to remember to re-write that query yourself to remove the aggregation, grouping and probably time-frame selection criteria and just do a `LAST(x)` (or `AVG(x)` etc) for the one metric you're interested in.
 
 1. Navigation design. I get that Grafana is supposed to be your palette of a
@@ -206,8 +206,8 @@ want to visit.
     * God help you if you forgot to do this on a large environment and just allowed "view all" because the top of the dashboard page becomes just a l-o-n-g list of all the created dashboards. Things get better - a bit - if you rememebered to tick the "Show as dropdown" option, but even then there's borkage: From the list displayed you'll get not only the dashboards available _but also the folders as separate clickable items_. And they're not distinguished. So when you click you've got no idea whether you're going to be taken to an actual new dashboard page, or thrown back out to a (filtered) view of that file-explorer like dashboard organiser page[^2]
     * Also worth noting is that building dashboard navigation this way completely negates the point of the built-in "favourite" mechanism. With login-to-homescren behaviour, favouriting a Dashboard bubbles it to the top of the list of dashboards on that page, making it easier to find. But when an actual Dashboard is set as home, there's zero benefit of marking as favourite. It doesn't affect ordering in the "dropdown" or the spew-over-the-page mode of handling Dashboard links and (as far as I can tell) there's no way to get to the list-of-dashboards-as-home page that does use that mechanism.
 
-1. The pain of dynamic time-window setting. And this is firmly in the "It's a Grafana+Influx thing" camp. In my example above I'd like to be able to set time-windows that match my billing periods, which don't align to month start/end and can change by a day or two each period. Ideally, I'd use the timestamp of an entry in the billing details (normally the last one) to say "Show me the consumption since X" to get an idea of how much my _next_ bill is likely to be. I cannot find any way to do this, though, because both Grafana and Influx treat Timestamps on time-series data as "implicit" - required in order to locate the point/value being plotted but in no way externally accessible. 
-    * Unless I'm missing something. Which I might well be. I cannot find a way either in a Panel query or in a Variable query to get Influx to spit out a numeric value representing a date that equates to "the timestamp of the last data row from X measurement". 
+1. The pain of dynamic time-window setting. And this is firmly in the "It's a Grafana+Influx thing" camp. In my example above I'd like to be able to set time-windows that match my billing periods, which don't align to month start/end and can change by a day or two each period. Ideally, I'd use the timestamp of an entry in the billing details (normally the last one) to say "Show me the consumption since X" to get an idea of how much my _next_ bill is likely to be. I cannot find any way to do this, though, because both Grafana and Influx treat Timestamps on time-series data as "implicit" - required in order to locate the point/value being plotted but in no way externally accessible.
+    * Unless I'm missing something. Which I might well be. I cannot find a way either in a Panel query or in a Variable query to get Influx to spit out a numeric value representing a date that equates to "the timestamp of the last data row from X measurement".
 
 ***
 [^1]: We need to think about automatic dashboard refresh intervals here, though, I think...
