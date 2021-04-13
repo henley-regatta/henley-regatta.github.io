@@ -104,3 +104,15 @@ turning them into timezone-aware timestamps. There appears to be a bug in the pl
 which means overriding the type detection (I'd like to hard-code it as a "String")
 doesn't work. I've raised [Issue #94](https://github.com/marcusolsson/grafana-json-datasource/issues/94)
 on the plugin to see if this helps or not.
+
+## Issues: End-of-Period
+Another element is that many of the queries I'd like to execute amount to "In this billing period";
+the way the selector works is it's only passing in the _start_ of the period, not the end.
+I can't work out if there's an iterator available that would let me work out
+what the next-row-start therefore this-row-end period would be, I suspect
+Grafana's _Repeat_ mechanism doesn't embed this anywhere (why would it? The
+  selection mechanism provides no guarantees that there is a "next" let alone what
+  it's value is and whether it's adjacent or not).
+
+The ugly hack I've implemented for the minute is to just assume constant 31-day
+periods which is clearly _wrong_ but provides illustrative data. 
