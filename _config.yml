@@ -21,10 +21,7 @@
 title: Things Of Fleeting Interest
 email: henley-github@guided-naafi.org
 description: >- # this means to ignore newlines until "baseurl:"
-  I was told all the Cool Kids are republishing stuff themselves 
-  using Github Pages and Jekyll. So I'm a dedicated follower of fashion.
-  You'll find stuff here that I've either created specifically or moved from
-  Other Places. It'll be more tech-oriented than anything else though.
+  Bog-Standard Nerd self-documentation-and-reminder stuff.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://henley-regatta.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: henley_regatta

@@ -2,7 +2,7 @@
 layout: post
 title:  "Is this on now?"
 date:   2021-04-09 13:52:00 +0100
-categories: jekyll update
+categories: jekyll
 tags: siteadmin jekyll noise
 ---
 So I think I've got a minimally-working site using Jekyll. The instructions
