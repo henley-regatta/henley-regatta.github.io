@@ -1,7 +1,9 @@
 <head>
   <link rel="shortcut icon" type="image/png" href="{{ site.url }}/assets/favicon.png">
-  <meta charset="utf-8">
+    <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Opt out of FLoC if I can. Recommended by https://paramdeo.com/blog/opting-your-website-out-of-googles-floc-network -->
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
