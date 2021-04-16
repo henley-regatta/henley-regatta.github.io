@@ -6,7 +6,7 @@ categories: dataanalysis
 tags:  garmin data_analysis cycling fitness
 ---
 # So, am I actually getting slower on the bike as I age?
-I did a ride earlier, second this week. I don't exercise enough. That's
+I did a ride earlier today[^3], my second this week. I don't exercise enough. That's
 indisputable. And what's worse I'm inconsistent. So the *actual* answer to
 the question posed above is: _Probably, but you'd not notice if you actually_
 _rode some more you lazy slob_.
@@ -14,31 +14,32 @@ _rode some more you lazy slob_.
 With that said, let's do some analysis.
 
 ## Data Is Everything
-Yes, I log every ride. I have Garmin equipment to do so. In theory I can get
-the raw data back out of Strava and look at it there, but who wants to be
-bothered?
 
-Garmin Connect has a nice "All Activities" page one can visit, scroll
-through and download (as CSV) summary data for all activities. One quick
-filter for "cycling" and, boomshanka. All of the following is based on my
-last 100 rides.
+_Obviously_, I log every ride. I have Garmin equipment to do so. In theory I
+can get the raw data back out of Strava as per-ride GPX files and look at it
+there, but who wants to be bothered[^4]?
+
+Garmin Connect has a nice "All Activities" page one can visit, scroll through
+and download, as a CSV, the summary data for all visible activities. This is
+exactly what I'm looking for. A quick filter for "cycling" and, boomshanka. All
+of the following is based on a decent, recent subset of the activities I've
+logged.
 
 ## So am I getting slower over time?
 Here's the average speed of my last 100 rides with a trend line:
 ![Average Speed of last 100 rides](https://docs.google.com/spreadsheets/d/e/2PACX-1vRsRa_HKeVxzpvNw6kNccj36rDQ3tE10z1FyAz9QeUa41gstAu5Ld2AZjatPsguySlogCqfEt36gVcF/pubchart?oid=1955255277&format=image)
-See that little downward tilt of the trend line? Yes, I'm getting slower
+Ah, that little downwards tilt of the trend line. Yes, I'm getting slower
 over time. (...Well, a bit).
 
-But that's not entirely accurate - maybe I'm riding further, or doing more
-climbing, or some other factor is in play.
+But that's an _observation_, it's not an _explanation_ - maybe I'm riding
+further, or doing more climbing, or some other factor is in play.
 
-## OK slowcoach, so what about correcting for climbing.
-So it makes a certain amount of sense that average speed will decrease if
+## OK slowcoach, so what about correcting for climbing?
+It makes a certain amount of sense that average speed will decrease if
 you spend more time climbing than bombing along the flats[^1]. And I have
 data on how much climbing I've done on a given ride. So I can adjust the
 speeds to reflect this choosing "no climb" as zero-correction, with speed
 being "corrected" upwards dependent on the average gradient[^2]:
-
 ![Normalised Average Speed of last 100 rides](https://docs.google.com/spreadsheets/d/e/2PACX-1vRsRa_HKeVxzpvNw6kNccj36rDQ3tE10z1FyAz9QeUa41gstAu5Ld2AZjatPsguySlogCqfEt36gVcF/pubchart?oid=326841156&format=image)
 Oh. Nope, apparently I've still slowed down over the last couple of years (...Well, a bit).
 
@@ -48,14 +49,12 @@ But there's more ways to look at this.
 It makes sense now to think that perhaps if I'm doing _longer_ rides, my
 average speed would decrease. Because I'm more tired and thus losing watts
 and going slower as a result. What does the data say?
-
 ![Normalised Average Speed vs Ride Length](https://docs.google.com/spreadsheets/d/e/2PACX-1vRsRa_HKeVxzpvNw6kNccj36rDQ3tE10z1FyAz9QeUa41gstAu5Ld2AZjatPsguySlogCqfEt36gVcF/pubchart?oid=462404702&format=image)
 Oh. That doesn't make much sense does it? Apparently I get _quicker_ the
 further I go (...Well, a bit).
 
 One explanation for this is that large cluster of rides between 20-30KM:
 distance:
-
 ![Count of rides within distance buckets](https://docs.google.com/spreadsheets/d/e/2PACX-1vRsRa_HKeVxzpvNw6kNccj36rDQ3tE10z1FyAz9QeUa41gstAu5Ld2AZjatPsguySlogCqfEt36gVcF/pubchart?oid=918284232&format=image)
 The shorter rides - up to about 30KM - are either "specials" like family
 rides *or* they're _grabbed-at-short-notice_ / _not-got-much-time_ rides.
@@ -78,7 +77,6 @@ distance. Possibly I'm only tackling the longer rides at times when I'm
 fitter (late-spring / summer as my "training regime" hits it's peak).
 There's another possible explanation though, given we already know I get
 faster the less climbing I do:
-
 ![Average Ride Gradient vs Ride Distance](https://docs.google.com/spreadsheets/d/e/2PACX-1vRsRa_HKeVxzpvNw6kNccj36rDQ3tE10z1FyAz9QeUa41gstAu5Ld2AZjatPsguySlogCqfEt36gVcF/pubchart?oid=1058403839&format=image)
 The longer the bike ride, the shallower it is. I (probably) do
 more _absolute_ climb on a longer ride but, crucially, as a fraction of it's
@@ -100,3 +98,7 @@ gradient is sufficient to outweigh the observed speed deficit...
 ***
 [^1]: I'd love to also correct for things like "average windspeed" and temperature, but the Garmin summaries don't appear to have those included. More Research Required.
 [^2]: It's hard to compare between the two charts as they look the same, but if you saw the raw data you'd see there _is_ a difference. Just not much of one, given the average climb gradients...
+[^3]: Oops, yesterday. Should be in bed now really.
+[^4]: Me, obviously. I already have analysis scripts for GPX files that would
+give me the summary stats I crave. But the night is late, and the bulk-export 
+facility looks like a phaff. Another time, perhaps.
