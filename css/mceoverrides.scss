@@ -1,0 +1,22 @@
+---
+# Front matter added to ensure Jekyll processes the file.
+---
+
+//Setup to load the (style) standard definitions:
+@import "minima";
+
+// And here's where I'd override stuff if I wanted to. For instance:
+
+//Put a box around the TOC (if generated) and include a header:
+#markdown-toc::before {
+  content: "Contents";
+  font-weight: bold;
+}
+
+#markdown-toc {
+  width: 75%;
+  background: GhostWhite;
+  border: 1px dotted darkgrey;
+  padding-left: 28px;
+  display: inline-block;
+}
