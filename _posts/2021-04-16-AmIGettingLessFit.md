@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Am I Getting Less Fit Over Time?"
-date:   2021-04-16 00:30 +0100
+date:   2021-04-16 01:00 +0100
 categories: dataanalysis
 tags:  garmin data_analysis cycling fitness
 ---
