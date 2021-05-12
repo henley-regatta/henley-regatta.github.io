@@ -391,7 +391,7 @@ operations as the following:
 
 {% endhighlight %}
 
-### Implementation Notes
+## Implementation Notes
 The first set of `InventoryRetrieve` jobs I ran returned "empty" inventories - valid
 JSON but without any data in the `ArchiveList` array and with a value of `InventoryDate`
 that's a default (1970). This was both before and after actually uploading some data
