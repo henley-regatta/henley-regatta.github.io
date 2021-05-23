@@ -401,6 +401,14 @@ generated.
 
 A second try at it a day or so later did actually update the Inventory with contents.
 
+###Update 2021-05-23
+Would it surprise anyone to find that the documentation's not 100% accurate?
+Experience so far shows that no matter how often you _request_ an updated
+inventory from Amazon, the server-side updates seem to happen no more than ~weekly.
+So I've adjusted my code such that even if the InventoryDate is stale (the previous
+trigger I was using for updates), it won't request a new one (pointless) for a
+configurable further period. 
+
 ### End.
 {: .no_toc}
 
