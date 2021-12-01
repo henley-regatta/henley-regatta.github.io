@@ -11,7 +11,7 @@ tags: aoc aoc2021 python javascript node golang rust
 I did [Advent of Code 2020](https://adventofcode.com/2020) and found it...
 well, equal parts enjoyable and frustrating at the same time. Didn't complete
 it in the alloted time but wasn't too far off (a couple of days) and got my 50
-stars. All my efforts are preseved in [github](https://github.com/henley-regatta/adventofcode2020
+stars. All my efforts are preseved in [github](https://github.com/henley-regatta/adventofcode2020)
 
 Inevitably, the lure of [Avent of Code 2021](https://adventofcode.com/2021) has
 proven more than my self-control to resist. As I write this I've done Day 1,
