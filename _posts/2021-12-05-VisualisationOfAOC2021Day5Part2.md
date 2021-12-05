@@ -8,7 +8,7 @@ tags: aoc aoc2021 python png
 
 # Writing Graphics To Visualise Answers
 
-I see visualising your answers is the Hot New Thing on [r/adventofcode] and 
+I see visualising your answers is the Hot New Thing on [r/adventofcode](https://www.reddit.com/r/adventofcode/) and 
 today's problem - Work out the intersections of a series of geothermal vents -
 lent itself perfectly to this. Not least of all because the easiest way to 
 actually come up with the answer you need was to, er, plot lines on a grid.
