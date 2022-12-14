@@ -10,7 +10,7 @@ Today's [Advent of Code problem](https://adventofcode.com/2022/day/14) was
 more visualisation-bait. The problem set was to first decode a (vertical)
 map of rocks, and then to determine how sand falls through that landscape;
 part 1 stops as soon as sand "hits the floor" (although the condition was 
-stated differently. Part 2 had the code continue until the floor "fills up"
+stated a little differently...). Part 2 had the code continue until the floor "fills up"
 and propagates back to the entry point. 
 
 #### My map decoded to: 
