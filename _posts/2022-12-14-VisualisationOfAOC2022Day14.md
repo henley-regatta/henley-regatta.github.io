@@ -30,6 +30,6 @@ and propagates back to the entry point.
 </center>
 <hr>
 
-The code used to generate these visualisations is here: [aoc2022/go/day14part12visualisation.go](https://github.com/henley-regatta/aoc2022/blob/main/go/day14part2_visualisation.go)
+The code used to generate these visualisations is here: [aoc2022/go/day14part12visualisation.go](https://github.com/henley-regatta/aoc2022/blob/master/go/day14part2_visualisation.go)
 
 *** 
