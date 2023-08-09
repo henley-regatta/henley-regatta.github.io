@@ -11,12 +11,24 @@ Homely system. So, why not add some mud to that water with my own thoughts?_
 
 Apologies, this is a long long wall of text with no pictures. And there's no real conclusion to speak of either
 
-**_update 1:  2023-08-09 13:00_**: Homely called back after leaving a message on
-support line; they have fixed the account login page and I've been able to
-select a Tariff that more closely matches our reality. Smart+ will get 2
-nights where it **knows** there's cheaper electricity between 02:00 and 05:00 to
-_actually_ run the hot water so we can have warm showers before I give in and
-fall back to Smart mode...
+---
+### Update 1:  2023-08-09 13:00
+
+Homely called back after leaving a message on their support line; they have fixed the
+account login page and I've been able to select a Tariff that more closely
+matches our reality. Smart+ will get 2 nights where it **knows** there's cheaper
+electricity between 02:00 and 05:00 to _actually_ run the hot water so we can
+have warm showers before I give in and fall back to Smart mode...
+
+There's also a suggestion that my email requests were ignored because they didn't
+come from the account holder's email (may well have hit the "spam" folder their
+side). Since I use a unique email address for all my signups (which can
+_receive_ email but, crucially, I can't always _send_ email from that address)
+this is a _plausible_ explanation. Lesson for the future: if I need help use the
+contact phone number not email...
+
+---
+
 
 **tl;dr:** 10/10 idea. So far, 4/10 execution. I _hope_ I will be able to
 update, amend and possibly even re-write all of what follows in the near future.
@@ -233,6 +245,8 @@ hour, _don't mess with the node_.
 
 ## The App. Part One - Account lack-of-management
 
+**_See Update 1 above - none of the following applies after 2023-08-09_**
+
 On to the next issue: I read the guide again and find that decisions on when to
 run the Heat Pump especially for hot water depend not a little on the expected
 Energy Tariff. You'll recall I mis-set that to one that's "Agile" meaning it
@@ -287,6 +301,11 @@ perhaps it's not me?.
 
 That was on Friday. It's now Tuesday. No response. And the account page still
 isn't working. I'm going to have to phone them, aren't I?....
+
+**_2023-08-09:_** Yes, telephone support is the way to go IF you've been too
+clever and used a unique sign-up email. If you're using your main email address,
+knock yourself out and let me know how it works because I'm genuinely
+interested.
 
 ## And what about the system, it's working right?
 
