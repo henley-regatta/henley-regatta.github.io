@@ -11,7 +11,14 @@ Homely system. So, why not add some mud to that water with my own thoughts?_
 
 Apologies, this is a long long wall of text with no pictures. And there's no real conclusion to speak of either
 
-**tl;dr:** 10/10 idea. So far, 3/10 execution. I _hope_ I will be able to
+**_update 1:  2023-08-09 13:00_**: Homely called back after leaving a message on
+support line; they have fixed the account login page and I've been able to
+select a Tariff that more closely matches our reality. Smart+ will get 2
+nights where it **knows** there's cheaper electricity between 02:00 and 05:00 to
+_actually_ run the hot water so we can have warm showers before I give in and
+fall back to Smart mode...
+
+**tl;dr:** 10/10 idea. So far, 4/10 execution. I _hope_ I will be able to
 update, amend and possibly even re-write all of what follows in the near future.
 
 The [Homely Smart Controller](https://www.homelyenergy.com/) is working - in the
@@ -22,19 +29,19 @@ receiving input from it's temperature sensors, and the App works on the Phone
 But...
 
 #### "Implementation" issues I'm frustrated I can't resolve: 
-  - I selected the wrong tariff on setup - in probably the wrong operation mode
+  - ~~I selected the wrong tariff on setup - in probably the wrong operation mode
     for our needs - and I _think_ this is why the hot water's not doing what I
-    expect
-  - I'm unable to log in to my account to rectify this and, so far, the
-  support's non-existent. 
+    expect.~~ System on probation now after selecting correct tariff.
+  - ~~I'm unable to log in to my account to rectify this and, so far, the
+  support's non-existent.~~ Used the telephone option, left a message, got a
+  call back within 2 hours. Issue resolved their side, can now log in to account
+  and change settings.
   - There is no way to tell what temperature the Hot Water tank is currently **at**.
   - The Temperature Node is a little "black box" and you need to continuously
     monitor the App to tell if/when it's connected and working.
   - Reconnecting the Node to the Hub is a _massive pain in the arse_ especially
     if you need to go into the attic to do so (if our insulation's effective
     it'll be freezing up there come winter...)
-
-I _think_ I've got a work-around for the last 2 issues but read on...
 
 #### "Conceptual" issues that I've got to deal with:
   - This system is making decisions about when/how to control our heating &
@@ -46,6 +53,9 @@ I _think_ I've got a work-around for the last 2 issues but read on...
     but in a few months it could be waking up to and living in a cold house
     through no fault of the heat pump system but just because we don't understand
     and can't effectively manipulate the control system.
+
+---
+**_2023-09-08_**: I'm only going to update "above this line". Note that I'm leaving everything else below but some of what follows below will be out of date/obsolete and _not marked as such_. Everything **above** this line should be accurate as of your reading.
 
 
 ## Context
