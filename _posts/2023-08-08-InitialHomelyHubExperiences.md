@@ -12,6 +12,36 @@ Homely system. So, why not add some mud to that water with my own thoughts?_
 Apologies, this is a long long wall of text with no pictures. And there's no real conclusion to speak of either
 
 ---
+### Update 2: 2023-08-11 08:30
+
+Two days later. Still no heat pump run in the morning. 
+
+We had a chat with the Installer yesterday who was able to remotely access our
+data and work out _why_ the hot water isn't coming on - there's a programmed
+Hysteresis correction of 10C to account for lag in the control system and/or
+measurement errors; at the times of day we were expecting hot water, the tank
+was reporting (to Homely) a temperature of 41C which is only 9 degrees below
+target, so it wasn't bothering to heat. He informed us that he'd "corrected"
+that (presumably reduced the value). 
+
+A little later he also managed to invoke
+what at first I identified as envy followed some time later by a sense of
+outrage. Simply by including a graph available _to the installer_ of the
+performance of our system hour-by-hour with every metric I could think of and
+many more plotted. None of which data is available (yet) to _the owner of the
+system itself_. 
+
+Encouraged by this apparent diagnosis and correction of a configuration
+setting, and encouraged by some manual mucking around with "Boost" modes
+yesterday (using these to override and get hot water and a run of the heating
+loop for an hour), we had some confidence that this morning would finally see
+the desired operation of the system as we expected.
+
+Unfortunately, as before, we woke to a tank of warm-ish water and a heat pump that
+hasn't run. Unlike yesterday, however, manual use of the app's Water-Boost and
+Heating-Boost controls has failed to prod the system into life...
+
+---
 ### Update 1:  2023-08-09 13:00
 
 Homely called back after leaving a message on their support line; they have fixed the
@@ -48,7 +78,9 @@ But...
   support's non-existent.~~ Used the telephone option, left a message, got a
   call back within 2 hours. Issue resolved their side, can now log in to account
   and change settings.
-  - There is no way to tell what temperature the Hot Water tank is currently **at**.
+  - There is no way **for the owner** to tell what the actual temperature of the
+    Hot Water tank is. This is, apparently, available along with 20+ other
+    metrics _to the installer_ via a separate app/mode. Even post-install.
   - The Temperature Node is a little "black box" and you need to continuously
     monitor the App to tell if/when it's connected and working.
   - Reconnecting the Node to the Hub is a _massive pain in the arse_ especially
@@ -56,10 +88,14 @@ But...
     it'll be freezing up there come winter...)
 
 #### "Conceptual" issues that I've got to deal with:
-  - This system is making decisions about when/how to control our heating &
-    hot water and it's _not explaining_ those decisions in any way. 
   - The system is 100% dependent on our trusting it. Without in any way providing
     the ability to prove that the system is, in fact, worthy of trust.
+  - This system is making decisions about when/how to control our heating & hot
+    water and it's _not explaining_ those decisions in any way. 
+      - The data to do so _is_ available to the installer but it's not at all
+      clear that the control algorithm/heuristics are documented in any way (i.e.
+      our _installer_ can see what it's doing in great detail over time but it's
+      not clear anyone can explain _why_)
   - This is a bit more important than "My TiVo skipped an episode of my
     favourite show". So far it's limited to less-warm showers in the morning,
     but in a few months it could be waking up to and living in a cold house
