@@ -12,6 +12,38 @@ Homely system. So, why not add some mud to that water with my own thoughts?_
 Apologies, this is a long long wall of text with no pictures. And there's no real conclusion to speak of either
 
 ---
+### Update 3: 2023-08-15 13:00
+
+Partial Success Time.
+
+Not at first, no. Friday's experience was miserable - no heat pump run _and_
+manual override (Heating Boost / Hot Water Boost) achieved nothing, no Heat Pump
+activity. In frustration I disabled the Homely Hub completely for the weekend
+and we taught ourselves how to use the Midea controller instead. 
+
+This was valuable as despite being "dumb" (it only comes on at the programmed
+times... which is actually as smart as you _need_ these things) there's clearly
+enough intelligence in the system such that timer-scheduled runs don't achieve
+anything if the water's already up to temperature. Given the heat storage of the
+tank this is important to know - a run in the afternoon / early evening will
+almost certainly mean the overnight run is skipped; our showers the following
+morning are then at "acceptable" rather than preferred temperatures...
+
+**However** on Monday I received an unsolicited phone call from Homely
+themselves being very apologetic - they only received the instruction to change
+the hysteresis temperature on Friday evening so it hadn't occurred. I explained
+the situation and agreed to power on the Hub again. It's in "Smart" mode not
+"Smart+" so I'm not expecting any accounting for our time-of-day electricity
+tariffs in the execution. The good news is that the pump then ran to achieve the
+target temperature by the evening time window - success!. As noted above,
+though, this meant that even with a smaller offset temperature (5C instead of
+10C) there was no overnight run; this didn't matter this morning as there's
+plenty of hot water from the previous run.
+
+We're going to have to delete the afternoon schedule to provide a better test of
+having Homely do a run overnight...
+
+---
 ### Update 2: 2023-08-11 08:30
 
 Two days later. Still no heat pump run in the morning. 
@@ -60,7 +92,7 @@ contact phone number not email...
 ---
 
 
-**tl;dr:** 10/10 idea. So far, 4/10 execution. I _hope_ I will be able to
+**tl;dr:** 10/10 idea. So far, 5/10 execution. I _hope_ I will be able to
 update, amend and possibly even re-write all of what follows in the near future.
 
 The [Homely Smart Controller](https://www.homelyenergy.com/) is working - in the
@@ -73,19 +105,36 @@ But...
 #### "Implementation" issues I'm frustrated I can't resolve: 
   - ~~I selected the wrong tariff on setup - in probably the wrong operation mode
     for our needs - and I _think_ this is why the hot water's not doing what I
-    expect.~~ System on probation now after selecting correct tariff.
+    expect.~~ 
+    - ~~System on probation now after selecting correct tariff.~~
+    - Nope, that wasn't it. Looks like it's a default 10C temperature hysteresis
+      correction that stops the heat pump heating hot water as expected.
   - ~~I'm unable to log in to my account to rectify this and, so far, the
-  support's non-existent.~~ Used the telephone option, left a message, got a
-  call back within 2 hours. Issue resolved their side, can now log in to account
-  and change settings.
+  support's non-existent.~~ 
+    - Used the telephone option, left a message, got a call back within 2 hours.
+      Issue resolved their side, can now log in to account and change settings.
+    - Actually +1 for Support given their unsolicited call to explain the
+      situation and check how we're doing on 2023-08-14. Their heart is in the
+      right place even if the implementation's not quite there yet.
   - There is no way **for the owner** to tell what the actual temperature of the
-    Hot Water tank is. This is, apparently, available along with 20+ other
-    metrics _to the installer_ via a separate app/mode. Even post-install.
+    Hot Water tank is. 
+    - This is, apparently, available along with 20+ other metrics _to the
+      installer_ via a separate app/mode. Even post-install. As a nerd and also
+      being vaguely bothered by the "who owns this data anyway" arguments, we
+      have Room To Improve here.
   - The Temperature Node is a little "black box" and you need to continuously
     monitor the App to tell if/when it's connected and working.
+    - Helped by the fact that _once_ it's working, it does seem relatively
+      stable _if you leave it alone_.
   - Reconnecting the Node to the Hub is a _massive pain in the arse_ especially
     if you need to go into the attic to do so (if our insulation's effective
     it'll be freezing up there come winter...)
+    - At the moment I'm more concerned about resetting the Hub itself in the
+      event of problems now I've found a work-around for quick-reconnecting the
+      Node (just move close to the Hub - underneath it on the landing - and
+      long-press the button once. Should get a long light followed by 3 short
+      blinks, and the Homely app will report an updated indoor temperature
+      within a couple of minutes)
 
 #### "Conceptual" issues that I've got to deal with:
   - The system is 100% dependent on our trusting it. Without in any way providing
