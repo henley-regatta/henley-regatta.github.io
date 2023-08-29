@@ -130,6 +130,10 @@ But...
     - ~~System on probation now after selecting correct tariff.~~
     - Nope, that wasn't it. Looks like it's a default 10C temperature hysteresis
       correction that stops the heat pump heating hot water as expected.
+      -  **CONFIRMED** - internal "tweak" pushed down with 5C hysteresis and, voila, hot water.
+      - Also: Internal update so Smart+ knows about our 3-level electricity
+        tariff; doesn't show in the App yet but it's being used for planning
+        purposes
   - ~~I'm unable to log in to my account to rectify this and, so far, the
   support's non-existent.~~ 
     - Used the telephone option, left a message, got a call back within 2 hours.
