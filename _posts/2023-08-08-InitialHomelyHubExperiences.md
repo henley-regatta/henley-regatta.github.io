@@ -12,6 +12,27 @@ Homely system. So, why not add some mud to that water with my own thoughts?_
 Apologies, this is a long long wall of text with no pictures. And there's no real conclusion to speak of either
 
 ---
+### Update 4: 2023-08-29 09:00
+
+General Satisfaction Time.
+
+Over the last couple of weeks the system has been Working As Designed. 
+
+We got rid of the "evening" hot water schedule as we don't really need it. This
+ensures that the tank is below the threshold temperature when the "morning"
+schedule is active, which in turn means we have nice hot showers. The Heat Pump
+has a nicely-recognisable power signature climbing up to ~2kW as it heats the
+tank up (I expect this peak will rise as the outside temperature drops). 
+
+We had (email) feedback from Homely that my principle concerns - no
+representation of water tank temperature in the App plus consumer access to the
+raw / graphed data - are being looked at. Nothing's come of that yet but early
+days eh?
+
+Next update will probably be a while coming as we start to see the days get
+colder and our heating needs start to kick in. Will be interested to see how
+that works out for us....
+
 ### Update 3: 2023-08-15 13:00
 
 Partial Success Time.
