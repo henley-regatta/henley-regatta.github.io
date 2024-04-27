@@ -9,7 +9,7 @@ tags: money heatpump homely
 
 ## Energy Reduction
 
-We've saved over 3/4 of the total energy (measured in kWh) required to heat our
+We've saved over 3/4 (to whit: 77.4%) of the total energy required to heat our
 house by switching to the Heat Pump.
 
 ![77% Saving in Energy Consumption by switching to Heat Pump](/assets/2024-04-27_Heatpump_EnergyUsage_Comparison.png)
@@ -17,7 +17,7 @@ house by switching to the Heat Pump.
 
 ## Cost Reduction
 
-We've also saved over 1/4 of the costs of heating our house from the switch.
+We've also saved over 1/4 (29.6%) of the costs of heating our house from the switch.
 This is despite the effective cost-per-kWh **doubling** between the time periods.
 
 ![29% Reduction in total energy costs after switching to Heat Pump](/assets/2024-04-27_Heatpump_EnergyCost_Comparison.png)
@@ -214,20 +214,27 @@ there was extensive disruption and we've gained a whole _heap_ of pipework,
 cylinders, valves and other fittings in the roof space that pretty much look
 like a H.R.Geiger installation. There's the small matter of a honking great box
 sat outside the kitchen window that makes a continuous (but, admittedly,
-_quite_) hum as it works too. 
+_quiet_) hum as it works too. 
 
 Overall I think we've decided that it cost something like 3x the cost to Just
-Replace The Boiler. If we'd been loosing money on the running costs I'd finish
+Replace The Boiler. If we'd been losing money on the running costs I'd finish
 there but, since we're making a saving, I can confidently state that we will,
-_eventually_ recoup that cost. However, at current gas/electric rates I think
-we're looking at a 20-year period to do so. Obviously, over that timescale we
-can't expect the current conditions to persist. If, as seems likely, the cost
-differential between the two sources decreases (perhaps even making gas **more**
-expensive than electric at the end?) then the time to payoff decreases. 
+_eventually_ recoup that cost. The question then becomes: how long? At current
+gas/electric rates I think we're looking at a 20-year period to do so.
 
-In short: If you have the resources I can't see why you wouldn't, but don't do
-it for the return on investment alone. And think really, really carefully if you
-need financing to do it....
+The economic bet, therefore, is that the differential between Gas and Electric
+prices decreases over time. YMMV but for us it's averaging 2.5x cheaper per kWh
+for Gas right now. If that decreases, the time to payback decreases. I don't think 
+this is _too_ far off the mark on current trends, but 20 years is a long time.
+
+With all this in mind, can I recommend a switch to a Heat Pump? In all aspects
+other than financial, an unequivocal and enthusiastic "YES". If money is a
+consideration - and _lucky you_ if it's not - then some more thought is
+required. It might represent a reasonable return compared to, say, a savings
+account. On the other hand if you find yourself having to borrow to afford the
+system, then some really, really hard sums will need doing to prove that the
+energy cost savings outweigh whatever financing rate you're subjected to. 
+
 
 ***
 [^1]: The front door being a hilarious exception. It's got gaps you can watch the outside world through and is basically transparent to an IR camera meaning it's got the insulation value of a piece of wet lettuce. Still on our list of things to replace....
