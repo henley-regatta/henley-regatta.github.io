@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Financial Consequences of switching to a Air-Sourced Heat Pump - Experiences after (now) a full year"
-date:  2024-09-18 09:00:00 +0100
+date:  2024-04-27 18:00:00 +0100
 categories: review
 tags: money heatpump homely 
 --- 
