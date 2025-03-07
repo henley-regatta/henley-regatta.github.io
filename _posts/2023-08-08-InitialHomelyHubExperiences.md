@@ -5,11 +5,28 @@ date:  2023-08-08 08:30:00 +0100
 categories: review
 tags: winge heatpump homely 
 --- 
-_I'm writing this up, early, with limited experience because I went a-looking on
-t'internets and there's very little third-party information or reviews of the
-Homely system. So, why not add some mud to that water with my own thoughts?_
+### Final Update - 2025-03-07
 
-Apologies, this is a long long wall of text with no pictures. And there's no real conclusion to speak of either
+I haven't updated this in the 18 months since the last update because,
+mainly, I haven't needed to.
+
+The short update is: Homely is a great solution, the initial teething
+problems described below are long, long behind us and our experiences
+since then have been almost without exception positive. The Smart+ mode in
+particular has worked _spectacularly_ to optimise Heat Pump usage in tune
+with our electricity tariff, and has been responsible for quite
+considerable financial savings without any noticeable impact on comfort.
+We have hot water when we want it, the house is at a comfortable
+temperature all day round, all year, and our running costs are as low as
+they could be to meet that requirement.
+
+We were so pleased with the performance of the Homely system that I gladly signed up to pay _real money_ for a Smart+ subscription once the year's trial period was over. Compared to the cost savings it makes us the subscription fee is a no-brainer. 
+
+The one, small, fly in the ointment is that we've found battery life of the remote temperature "puck" hasn't been great, no more than 6 months and (because we so rarely need to go into the app to make changes!) it can take us a while to notice it's died. Disassembly/Reassembly to change the battery is also quite fiddly but it's only a 10 minute job. 
+
+So the recommendation here is: If you get a chance, get a Homely system, sign up for the Smart+ mode and enjoy the savings. But buy a small stack of CR2032 batteries and make sure you've got a jeweller's screwdriver set handy too.
+
+_This update dedicated to Mastodon user **Rusty** who somehow found me recently and asked for a more recent recommendation. Thanks for the prompt to update my contact details and hope you enjoy your own system!_
 
 ---
 ### Update 4: 2023-08-29 09:00

@@ -20,12 +20,25 @@
 
 title: Things Of Fleeting Interest
 email: henley-github@guided-naafi.org
+#author:
+# name: Things of Fleeting Interest
+# email: henley-github@guided-naafi.org
 description: >- # this means to ignore newlines until "baseurl:"
   Bog-Standard Nerd self-documentation-and-reminder stuff.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://henley-regatta.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: henley_regatta
+mastodon:
+  - username: henley_regatta
+    instance: mstdn.social
 github_username:  henley-regatta
+minima:
+  social_links:
+    - title: GitHub
+      icon: github
+      url: "https://github.com/henley-regatta"
+    - title: Mastodon
+      icon: mastodon
+      url: "https://mstdn.social/@henley_regatta"
 
 # Build settings
 theme: minima
